@@ -1,0 +1,8 @@
+{
+  "name": "algolift-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "aws-sdk": "^2.812.0"
+  }
+}

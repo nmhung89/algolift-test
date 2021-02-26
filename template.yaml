@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Algolift test
+
+Resources:  
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: './'
+      Handler: index.main
+      FunctionName: 'algolift-test'
+      MemorySize: 128
+      Timeout: 30
+      Runtime: nodejs12.x
+      Role: arn:aws:iam::613225463399:role/algolift-s3-role
